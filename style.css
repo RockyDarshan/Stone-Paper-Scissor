@@ -1,0 +1,120 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(45, 56, 82);
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+h1 {
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+/* Scoreboard Styling */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* Message Container */
+.ms-container {
+    margin-top: 2rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+/* Choices Styling */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4.5rem;
+    gap: 1.5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #be3d16;
+}
+
+/* Image Styling */
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: bisque;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .choices {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+}
